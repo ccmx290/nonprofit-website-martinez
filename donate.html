@@ -5,27 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Atelier Colima Nonprofit</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <h1>Atelier Colima</h1>
+        <div class="container py-3">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6 text-center mb-0">Atelier Colima</h1>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="events.html">Events</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="donate.html">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <p>Donate page content coming soon!</p>
+    <main  class="flex-grow-1">
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="display-4">About Donations</h2>
+                        
+                        <p>A great way to support our efforts is by donating, and we take both monetary donations and supply donations. It is through the generous contributions of our supporters that we can host our events/classes and provide materials to members of our communities, so truly, anything helps.</p>
+                        
+                        <p>If you can't contribute in this way, volunteering is a great third option that you can <a href="events.html#get-involved">learn more about in our Events page.</a> And if that isn't a doable option either, rest assured that we are also endlessly grateful for those who support us by showing up to our events or spreading the word about the work that we do.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <article class="col-lg-6">
+                        <h3 class="fw-semibold">Monetary Donations</h3>
+
+                        <p>We are grateful for any money you decide to send our way, and below we describe the many ways that the money will be used, so you know that it will go to a good cause that you can support.</p>
+
+                        <p class="fw-bold mb-1">How we use your donations:</p>
+                        <ul>
+                            <li>Fund our events/classes</li>
+                            <li>Purchase new supplies</li>
+                            <li>Repair or replace musical instruments and digital cameras as needed</li>
+                            <li>Offer free/discounted meals during certain events/classes</li>
+                        </ul>
+                    </article>
+
+                    <article class="col-lg-6">
+                        <h3 class="fw-semibold">Supply Donations</h3>
+
+                        <p>When talking about donating supplies, we accept those that are in good &#40;but used&#41;, like new, and new condition. We understand wanting old, unused materials to go to a good cause, but our community deserves supplies that are clean and in working order.</p>
+                        
+                        <p>We will not take items including, but not limited to&#58; broken coloring supplies, dried-out markers, musical instruments that need repairs beyond tuning or restringing, or any damaged electronics &#40;such as drawing tablets and digital cameras&#41;.</p>
+
+                        <p class="fw-bold mb-1">How we use donated supplies:</p>
+                        <ul class="mb-0">
+                            <li>Donated to members of the community directly</li>
+                            <li>Donated to local schools, places of worship, etc</li>
+                            <li>Provided for use at our events/classes</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="display-4">Donate</h2>
+
+                        <p>In the form below, you can submit a one-time donation of a predetermined amount or input a customized amount of your choosing.</p>
+
+                        <p>For supply donations, please <a href="../index.html#contact-form">reach out using our main contact form</a> and we will get in touch soon.</p>
+
+                        <p>If you are both contributing financially and donating supplies, use the form below and describe the materials in the message box.</p>
+
+                        <div class="form">
+                            <div class="mb-3">
+                                <label for="first-name" class="form-label fw-semibold">First name</label>
+                                <input type="text" class="form-control" id="first-name" placeholder="Jane">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="last-name" class="form-label fw-semibold">Last name</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="Doe">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="email@address.com">
+                            </div>
+
+                            <fieldset>
+                                <legend class="fs-6 fw-semibold">Radio button legend</legend>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="amount" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">$50 pesos</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="amount" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">$100 pesos</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">$250 pesos</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="amount" id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">$500 pesos</label>
+                                </div>
+
+                                <div class="form-check form-check-inline mb-3">
+                                    <input class="form-check-input" type="radio" name="amount" id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">Other amount</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label fw-semibold">Your message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <button class="btn btn-primary fw-semibold " type="submit">Send Donation</button>
+                        </div>
+
+                        <!-- <p class="thankyou-note fs-2 fw-semibold text-center mt-5">We thank you for your contribution!</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mb-5">
+                <div class="donate-img container px-4 px-lg-5 h-100">
+                    <div class="row h-100 align-items-center justify-content-center text-center">
+                        <div class="col-md-12 align-self-end">
+                            <p class="display-6 fw-bold text-white">We thank you for your contribution!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
-    <footer>
-        <p>Copyright &copy; 2026</p>
+    <footer class="footer mt-auto py-3 fw-semibold">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-3">
+                    <p class="mb-0">Copyright &copy; 2026</p>
+                </div>
+
+                <div class="soc-med col col-md-6 text-center">
+                    <p class="mb-0">Where to find us:</p>
+
+                    <div class="text-decoration-none mb-0">
+                        <a href="#"><i class="bi bi-instagram fs-3 me-3"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-3 me-3"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp fs-3"></i></a>
+                    </div>
+                </div>
+
+                <div class="col col-md-3 text-end">
+                    <a class="text-decoration-none mb-0" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
