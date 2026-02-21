@@ -13,7 +13,7 @@ The purpose of this website is to inform visitors about our artistic and cultura
 
 ## Planned Features
 - Home page with a mission and impact overview, a contact form, and social media links
-- About Us page with our history and information about our work
+- About Us page with us and information about our work
 - Donation page with a payment form/link, and information on other ways to support our mission
 - Events page
 - Mobile-friendly and responsive design
