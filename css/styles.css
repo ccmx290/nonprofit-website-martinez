@@ -127,6 +127,12 @@ footer a:hover {
     color: #722d13;
 }
 
+/* Adds link to website/brand name so clicking on it leads back to the home page, as an additional form of navigation */
+h1 a {
+    color: #ad4e2b;
+    text-decoration: none;
+}
+
 
 /*  ====================
     Forms & Buttons
