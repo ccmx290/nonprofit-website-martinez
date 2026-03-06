@@ -164,3 +164,11 @@ textarea:focus{
 .btn:focus {
     background-color: #30495a;
 }
+
+
+/*  ====================
+    Form Fields Error Messages
+==================== */
+.error {
+    color: rgb(218, 1, 1);
+}
