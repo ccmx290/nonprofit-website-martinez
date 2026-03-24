@@ -172,3 +172,8 @@ textarea:focus{
 .error {
     color: rgb(218, 1, 1);
 }
+
+#radioError {
+    display: block;
+    margin-bottom: 1rem;
+}

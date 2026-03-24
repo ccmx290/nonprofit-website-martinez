@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
     <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <div id="top"></div>
@@ -109,25 +111,28 @@
 
                         <p>If you are both contributing financially and donating supplies, use the form below and describe the materials in the message box.</p>
 
-                        <div class="form">
+                        <form id="donateForm" novalidate>
                             <div class="mb-3">
-                                <label for="first-name" class="form-label fw-semibold">First name</label>
-                                <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Jane">
+                                <label for="firstname" class="form-label fw-semibold">First name</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Jane" required>
+                                <span class="error-message" id="nameError"></span>
                             </div>
 
                             <div class="mb-3">
-                                <label for="last-name" class="form-label fw-semibold">Last name</label>
-                                <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Doe">
+                                <label for="lastname" class="form-label fw-semibold">Last name</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Doe" required>
+                                <span class="error-message" id="nameError"></span>
                             </div>
 
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-semibold">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="email@address.com">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="email@address.com" required>
+                                <span class="error-message" id="emailError"></span>
                             </div>
 
-                            <fieldset>
+                            <fieldset id="donationAmounts" required>
                                 <legend class="fs-6 fw-semibold">Donation amount</legend>
-                                
+                                    
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="amount" id="inlineRadio1" value="option1">
                                     <label class="form-check-label" for="inlineRadio1">$50 pesos</label>
@@ -139,7 +144,7 @@
                                 </div>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <input class="form-check-input" type="radio" name="amount" id="inlineRadio3" value="option3">
                                     <label class="form-check-label" for="inlineRadio3">$250 pesos</label>
                                 </div>
 
@@ -152,15 +157,18 @@
                                     <input class="form-check-input" type="radio" name="amount" id="inlineRadio5" value="option5">
                                     <label class="form-check-label" for="inlineRadio5">Other amount</label>
                                 </div>
+
+                                <label for="amount" id="radioError" class="error"></label>
                             </fieldset>
 
                             <div class="mb-3">
                                 <label for="message" class="form-label fw-semibold">Your message</label>
-                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your Message"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your Message" ></textarea>
+                                <span class="error-message" id="messageError"></span>
                             </div>
 
                             <button class="btn btn-primary fw-semibold" type="submit">Send Donation</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -203,5 +211,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+	
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="js/form-validation.js"></script>
 </body>
 </html>
