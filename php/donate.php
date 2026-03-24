@@ -21,7 +21,7 @@
         <div class="container py-3">
             <div class="row">
                 <div class="col">
-                    <h1 class="display-6 text-center mb-0"><a href="index.html">Atelier Colima</a></h1>
+                    <h1 class="display-6 text-center mb-0"><a href="index.php">Atelier Colima</a></h1>
                 </div>
             </div>
         </div>
@@ -36,16 +36,16 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="donate.html">Donate</a>
+                        <a class="nav-link active" aria-current="page" href="donate.php">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="events.php">Events</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                         
                         <p>A great way to support our efforts is by donating, and we take both monetary donations and supply donations. It is through the generous contributions of our supporters that we can host our events/classes and provide materials to members of our communities, so truly, anything helps.</p>
                         
-                        <p>If you can't contribute in this way, volunteering is a great third option that you can <a href="events.html#get-involved">learn more about in our Events page.</a> And if that isn't a doable option either, rest assured that we are also endlessly grateful for those who support us by showing up to our events or spreading the word about the work that we do.
+                        <p>If you can't contribute in this way, volunteering is a great third option that you can <a href="events.php#get-involved">learn more about in our Events page.</a> And if that isn't a doable option either, rest assured that we are also endlessly grateful for those who support us by showing up to our events or spreading the word about the work that we do.
                         </p>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
 
                         <p>In the form below, you can submit a one-time donation of a predetermined amount or input a customized amount of your choosing.</p>
 
-                        <p>For supply donations, please <a href="index.html#contact-form">reach out using our main contact form</a> and we will get in touch soon.</p>
+                        <p>For supply donations, please <a href="index.php#contact-form">reach out using our main contact form</a> and we will get in touch soon.</p>
 
                         <p>If you are both contributing financially and donating supplies, use the form below and describe the materials in the message box.</p>
 

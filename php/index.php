@@ -36,16 +36,16 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="donate.html">Donate</a>
+                        <a class="nav-link" href="donate.php">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="events.php">Events</a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
     </nav>
 
     <main class="flex-grow-1">
-        <div class="container my-4 text-center fs-4">
+    <div class="container my-4 text-center fs-4">
             <?php
                 date_default_timezone_set("America/Chicago");
 
@@ -93,7 +93,7 @@
 
                                 <p class="card-text">Located in the center of Colima, Atelier Colima is a nonprofit organization and artist collective committed to the promotion and education of art and culture through community-led classes and events.</p>
 
-                                <a href="events.html#get-involved" class="btn btn-primary fw-semibold">Find out how to get involved</a>
+                                <a href="events.php#get-involved" class="btn btn-primary fw-semibold">Find out how to get involved</a>
                             </div>
 
                             <img src="https://ccmx290.github.io/nonprofit-website-martinez/media/coloring-pencils.jpg" class="card-img-bottom" alt="Closeup of colored pencils lying over several scattered drawings, and a hand coloring in the background.">
@@ -107,7 +107,7 @@
 
                                 <p class="card-text">As a collective, Atelier Colima has brought more than joy and creativity to our communities. We have also raised funds and donated supplies to support our local artists and community members.</p>
 
-                                <a href="about.html" class="btn btn-primary fw-semibold">Learn more about our impact</a>
+                                <a href="about.php" class="btn btn-primary fw-semibold">Learn more about our impact</a>
                             </div>
 
                             <img src="https://ccmx290.github.io/nonprofit-website-martinez/media/watercolor-portrait.jpg" class="card-img-bottom" alt="Masculine person painting a watercolor portrait on a wooden easle.">

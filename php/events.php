@@ -19,7 +19,7 @@
         <div class="container py-3">
             <div class="row">
                 <div class="col">
-                    <h1 class="display-6 text-center mb-0"><a href="index.html">Atelier Colima</a></h1>
+                    <h1 class="display-6 text-center mb-0"><a href="index.php">Atelier Colima</a></h1>
                 </div>
             </div>
         </div>
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="donate.html">Donate</a>
+                        <a class="nav-link" href="donate.php">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="events.html">Events</a>
+                        <a class="nav-link active" aria-current="page" href="events.php">Events</a>
                     </li>
                 </ul>
             </div>
