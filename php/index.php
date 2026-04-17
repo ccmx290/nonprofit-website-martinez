@@ -125,7 +125,7 @@
 
                         <p>Feel free to reach out with any questions, suggestions, or comments!</p>
 
-                        <form id="contactForm" novalidate>
+                        <form id="contactForm" method="POST" action="submit_form.php" novalidate>
                             <div class="mb-3">
                                 <label for="firstname" class="form-label fw-semibold">First name</label>
                                 <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Jane" required>
