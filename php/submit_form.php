@@ -1,14 +1,40 @@
 <?php
 
-require('db_connect_sample.php');
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $firstname = trim($_POST['firstname'] ?? '');
+    $lastname = trim($_POST['lastname'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $message = trim($_POST['message'] ?? '');
 
-    echo "The form was submitted.";
+    // Verifies that required fields are completed
+    if(empty($firstname) || empty($lastname) || empty($email) || empty($message)) {
+        die("Please complete all of the required fields.");
+    }
+
+    // Sanitizes data
+    $firstname = strip_tags($firstname);
+    $lastname = strip_tags($lastname);
+    $email = strip_tags($email);
+    $message = strip_tags($message);
+    
+    include('db_connect.php');
+
+    $sql = "INSERT INTO messages (firstname, lastname, email, message) 
+            VALUES (:firstname, :lastname, :email, :message)";
+
+    $statement = $db->prepare($sql);
+
+    $statement->execute([
+        ':firstname' => $firstname,
+        ':lastname' => $lastname,
+        ':email' => $email,
+        ':message' => $message
+    ]);
+
+    echo "Thank you, the form was submitted successfully.";
 }
 else {
     echo "Nothing was submitted.";
