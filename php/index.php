@@ -169,7 +169,7 @@
                 <div class="soc-med col col-md-6 text-center">
                     <p class="mb-0">Where to find us:</p>
 
-                    <div class="text-decoration-none mb-0">
+                    <div class="socmed-icons text-decoration-none mb-0">
                         <a href="#"><i class="bi bi-instagram fs-3 me-3"></i></a>
                         <a href="#"><i class="bi bi-facebook fs-3 me-3"></i></a>
                         <a href="#"><i class="bi bi-whatsapp fs-3"></i></a>

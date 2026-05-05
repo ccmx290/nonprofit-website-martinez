@@ -177,3 +177,15 @@ textarea:focus{
     display: block;
     margin-bottom: 1rem;
 }
+
+
+/*  ====================
+    Media Query
+==================== */
+/* Prevents social media icons from wrapping ackwardly at narrower screen sizes */
+@media screen and (max-width: 400px) {
+    .socmed-icons {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
